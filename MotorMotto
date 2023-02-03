@@ -1,0 +1,15 @@
+from itertools import permutations # if there is an error -> google how to download python intertolls package
+
+op=set()
+
+inp='motto' # change the word you want to use
+l = [x.lower() for x in inp]
+
+for n in range(5,len(inp)+2): # you can change the 5 into another number; if 3 you will also get 3 letter words
+    for y in list(permutations(l,n)): 
+        z = ''.join(y)
+        op.add(z)
+
+print(len(op)) # to see the length
+print(op) # to see the list of words -> it's not ordered but you can download an ordered set package and how to apply it (probably change code a bit
+          # in line 3
