@@ -1,4 +1,4 @@
-from itertools import permutations # if there is an error -> google how to download python intertolls package
+from itertools import permutations # if there is an error -> google how to download python intertools package
 
 op=set()
 
